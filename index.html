@@ -1,3 +1,4 @@
+ds
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +33,55 @@
       <!-- SECTION car form -->
       <section class="row justify-content-center">
         <div id="form" class="col-12 col-md-8">
+          <form onsubmit="app.housesController.createHouse()" class="row bg-white rounded elevation-2 p-4">
+            <h3>List a House</h3>
+            <div class="mb-2 col-4">
+              <label for="name">listing name</label>
+              <input type="text" name="name" id="name" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="sqft"> square footage</label>
+              <input type="number" name="sqft" id="sqft" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="bed">Number of bedrooms</label>
+              <input type="text" name="bed" id="bed" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="baths">number of bathrooms</label>
+              <input type="text" name="baths" id="baths" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="img">House image</label>
+              <input type="text" name="name" id="name" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="price">listed price</label>
+              <input type="number" name="price" id="price" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="discription"> description</label>
+              <input type="text" name="description" id="discription" class="form-control">
+            </div>
+
+            <div class="mb-2 col-4">
+              <label for="color">color</label>
+              <input type="color" name="color" id="color" class="form-control">
+            </div>
+
+            <div class="text-end mt-2">
+              <button class="btn" type="button">cancel</button>
+              <button class="btn btn-primary" type="submit">submit</button>
+            </div>
+
+          </form>
+
           <!-- NOTE label labels the input, for points to the input's id so they are tied, name makes the input grab-able in js -->
 
           <!-- <form onsubmit="app.carsController.createCar()" class="row bg-white rounded elevation-2 p-4">

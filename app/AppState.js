@@ -20,7 +20,8 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/House').House[]} */
   houses = [
-    new House({ color: '#fff' }), new House({ color: '#000' })
+    new House({ color: '#fff', sqft: 1000, description: 'this house is so good', img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80', price: 300, rooms: 3, baths: '3', name: 'mid sized family home' }),
+    new House({ color: '#000', sqft: 500, description: 'get away from it all', img: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80', price: 200, rooms: 2, baths: '1.5', name: 'red barn' })
   ]
 
   // NOTE super weird type case as an example
